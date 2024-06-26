@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    /* border: none; */
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+.full-screen{
+    width:100%;
+    height: 100%;
+    position: static;
+}
+
+.nav{
+    /* border-radius:0.68rem; */
+    z-index:2;
+    top:0;
+    position:sticky;
+    width:100%;
+    background-color: #747474;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width:100%;
+    height:45rem;
+    overflow-x: hidden;
+}
+
+
+.nav-option{
+    animation: bounce 1000ms;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+
+.nav-bar-options{
+    display: flex;
+    width:60%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    color:rgb(145, 24, 48)
+}
+
+a{
+    color:black;
+}
+
+.nav-bar-options a:hover{
+    box-sizing: content-box;
+    width: 100%;
+    /* border: solid #ff0404 0.25rem; */
+    padding: 0.1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(20, 20, 20);
+    color:rgb(1, 1, 1);
+}
+
+.front-page{
+    background-color: #ffdbd0;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-y: hidden;
+}
+
+.logo_name{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo{
+    padding: 1rem;
+}
+
+.logo-image{
+    height: 2.5rem;
+    width:3rem;
+}
+
+.name{
+    color:rgb(255, 255, 255);
+    padding:1rem;
+    font-weight: 600;
+    /* animation: 1s 1 bounce; */
+    animation-name: show-name 2s alternate 0.1s normal;
+}
+
+@keyframes show-name{
+    from {
+        translate: 15vw 10;
+        scale: 200% 1;
+      }
+    
+      to {
+        translate: 10 0;
+        scale: 100% 1;
+      }
+}
+     
+.profile-photo{
+    border-radius:80%;
+    border: solid 0.8rem rgb(47, 47, 47);
+    width:25rem;
+    height: 25rem;
+    position: relative;
+    top:-4rem;
+    left:-2rem;
+}
+.photo-logo{
+    height:20rem;
+    width:20rem;
+    border-radius: 50%;
+    /* background-color: bisque; */
+    border: 2px solid black;
+    position: absolute;
+    top: 12rem;
+    left: 60rem;
+}
+
+.intro1{
+    position: absolute;
+    top:11rem;
+    left:5rem;
+    line-height: 1rem;
+    font-size: 3rem;
+    color:white;
+}
+
+.intro2{
+    position: absolute;
+    top:14rem;
+    left:5rem;
+    /* line-height: 1rem; */
+    font-size: 4rem;
+    color:white;
+
+    animation: NAME 2s Linear 1s 2 normal;
+}
+.NAME1{
+    color:white;
+    left: 11rem;
+    white-space: nowrap; 
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
+    animation: typing 7s steps(90, end) infinite , blink 1s infinite; 
+    
+}
+
+
+@keyframes typing { 
+    0% { 
+        width: 0%;
+        color: white;
+    } 
+
+    100% { 
+        width: 100%;
+        color: white;
+    } 
+} 
+
+
+/* @keyframes blink { 
+    0%, 
+    100% { 
+        border-right: 2px solid transparent; 
+    } 
+
+    100% { 
+        border-right: 2px solid #222; 
+    } 
+}  */
+
+.social_media{
+    position: absolute;
+    top:25rem;
+    left:5.2rem;
+    height: 5rem;;
+}
+
+
+.tag_line{
+    position: absolute;
+    top:20rem;
+    left:5.2rem;
+    line-height: 1rem;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.about-photo{
+    position: relative;
+    top: -6rem;
+    left:6rem;
+    height:22rem;
+    width: 22rem;
+    border-radius: 10%;
+    border: solid 0.2rem black;
+}
+
+.About{
+    background-color: #CAF4FF;  
+}
+
+.about-me{
+    position: relative;
+    left: 16.5rem;
+    margin:0;
+    font-size: 1.5rem;
+    bottom:-4rem;
+    padding-bottom: -5rem;;
+}
+
+.about1{
+    text-align: center;
+    font-size: 3rem;
+    margin:0;
+    animation: Heading-Ani 2s linear 3s 1 normal;
+}
+
+@keyframes Heading-Ani{
+    from{
+        font-size: 3rem;
+    }
+
+    to{
+        font-size: 4rem;
+    }
+}
+
+.description{
+    position: relative;
+    top: 7rem;
+    left:16.5rem;
+    font-size:1.5rem;
+    line-height: 1.75rem;
+}
+
+.Skills{
+    background-color: #A0DEFF;
+}
+
+.skills-abilities{
+    text-align: center;
+    font-size: 3rem;
+    animation: Heading-Ani 2s linear 6s 1 normal;
+}
+
+.fr-skills, .c-skills, .d-skills{
+    padding-left: 5rem;
+    display: inline-block;
+    position: relative;
+    font-size: 1.75rem;;
+    
+}
+
+.fr-skills{
+    top: 4.5rem;
+    left:4rem;
+}
+
+.c-skills, .d-skills{
+    top: -1.5rem;
+    left:5rem;
+}
+.f-skill, .c-skill, .d-skill{
+    padding-left: 3rem;
+    line-height: 7rem;
+    font-weight: 400;
+}
+
+.outer-box{
+    width:20rem;
+    height: 1.5rem;;
+    background-color: grey;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.html-skill{
+    padding-right:0.5rem;
+    height: 1.5rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 17rem;
+    border-radius: 0.5rem;
+}
+
+.css-skill{
+    height: 1.5rem;
+    padding-right:0.5rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 15rem;
+    border-radius: 0.5rem;
+}
+
+.js-skill{
+    height: 1.5rem;
+    padding-right:0.2rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.java-skill{
+    height: 1.5rem;
+    padding-right:0.5rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+
+.py-skill{
+    height: 1.5rem;
+    padding-right:0.5rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+.canva-skill{
+    height: 1.5rem;
+    padding-right:0.5rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+.cp-skill{
+    height: 1.5rem;
+    padding-right:0.5rem;
+    text-align: end;
+    margin:0;
+    background-color: rgb(253, 213, 15);
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+
+.amu-logo{
+    height: 11rem;
+    position: absolute;
+    top:148rem;
+    left:11rem;
+    border-radius: 2rem;
+}
+
+.Education{
+    padding-top: 1rem;
+    background-color: #5AB2FF;
+}
+
+.education{
+    text-align: center;
+    font-size: 3rem;
+    animation: Heading-Ani 2s linear 9s 1 normal;
+}
+
+.btech{
+    height: 14rem;
+    width:80rem;
+}
+.degree{
+    position: relative;
+    top: 5.5rem;
+    left:1rem;
+    font-size:2rem;
+    margin:0;
+}
+
+.branch, .class{
+    font-size: 2rem;
+}
+
+
+.mvm-logo{
+    height: 11rem;
+    position: absolute;
+    top:162rem;
+    left:14rem;
+    border-radius: 2rem;
+}
+
+
+.inter{
+    position: relative;
+    top:5rem;
+    left:4rem;
+    font-size:2rem;
+    margin:0;
+}
+
+.class{
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+.Experience{
+    background-color: #FFFDB5;
+}
+
+.roboclub-logo{
+    position: relative;
+    height: 4rem;
+    width: 25rem;
+    top:4rem;
+    left:4rem;
+}
+.experience_{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    animation: Heading-Ani 2s linear 12s 1 normal;
+}
+
+.amu-robo{
+    position: relative;
+    top:5rem;
+    left: 8rem;
+    font-size: 2rem;
+}
+
+.post{
+    position: relative;
+    font-size:1.5rem;
+    left: 2.1rem ;
+    margin:0.5rem;
+}
+
+.contact-head{
+    padding-top: 2rem;;
+    text-align: center;
+    font-size: 3rem;
+    animation: Heading-Ani 2s linear 15s 1 normal;
+}
+
+.card-logo{
+    display: flex;
+    position: relative;
+    left: 6rem;
+    top:2.5rem;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    background-color: #c5e1a8;
+    line-height: 4rem;
+    width:40rem;
+    position: relative;
+    left:40rem;
+    top:-20rem;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.Contact-Me{
+    overflow-y: hidden;
+    background-color: #DCFFB7;
+}
+.block{
+    position: relative;
+    left: 2rem;
+    font-size: 1.5rem;
+}
+
+.text-area{
+    left:115rem;
+    width: 25rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+
+.arrange{
+    position: relative;
+    top:0.2rem;
+    
+}
+
+.message{
+    position: relative;
+    top: -2rem;
+}
+
+
+.n-a-m-e{
+    padding-left: 1.8rem;
+    line-height: 2.5rem;
+    display: inline-block;
+}
+.e-m-a-i-l{
+    padding-left: 1.1rem;
+}
+.b-r-a-n-c-h{
+    padding-left: 1rem;
+}
+.y-e-a-r{
+    padding-left: 2.5rem;
+}
+
+.submit{
+    position: relative;
+    top:-1rem;
+    left:30rem;
+}
+
+#rupesh{
+    color:yellow;
+    z-index: 100;
+    position: absolute;
+    top:-2rem;
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .card-info, .submit{
+        left:30rem;
+    }
+}
+
+@media (min-width:800px) and (max-width:1032px) {
+    .card-info{
+        width: 20rem;
+        font-size: 20px;
+        top:-15rem;
+    }
+    .text-area{
+        width: 10rem;
+    }
+
+    .submit{
+        left:14rem;
+    }
+    .card-logo{
+        position: relative;
+        top:5rem;
+        height: 20rem;
+    }
+}
+
+@media (min-width:650px) and (max-width:800px){
+    .card-info{
+        left:22rem;
+        width: 20rem;
+        font-size: 20px;
+        top:-10rem;
+    }
+    .text-area{
+        width: 10rem;
+    }
+
+    .submit{
+        left:14rem;
+    }
+    .card-logo{
+        position: relative;
+        top:8rem;
+        height: 15rem;
+    }
+}
+
+@media (min-width:500px) and (max-width:650px){
+    .card-info{
+        left:10rem;
+        width: 20rem;
+        font-size: 20px;
+        top:4rem;
+    }
+    .text-area{
+        width: 10rem;
+    }
+
+    .submit{
+        left:14rem;
+    }
+    .card-logo{
+        display: none;
+    }
+}
+
+@media (min-width:200px) and (max-width:650px){
+    .card-info{
+        left:2rem;
+        width: 20rem;
+        font-size: 20px;
+        top:4rem;
+    }
+    .text-area{
+        width: 10rem;
+    }
+
+    .submit{
+        left:14rem;
+    }
+    .card-logo{
+        display: none;
+    }
+
+    .contact-head{
+        text-align: center;
+    }
+}
+
+
